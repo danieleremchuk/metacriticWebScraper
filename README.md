@@ -7,6 +7,6 @@ Things I learned:
 2. Web Scraping
 3. EJS
 
-#Demo
+# Demo
 
 <img src="public/demo.gif" />
