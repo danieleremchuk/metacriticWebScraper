@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html {
+    background-color: rgba(0,0,0,0.3);
+    padding: 50px;
+    color: rgba(245,245,245,0.7);
+    font-family: 'Permanent Marker', cursive;
+    scroll-behavior: smooth;
+}
+
+div.tile {
+    height: 100vh;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+h1 {
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h3 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+p#timer {
+    font-size: 50px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    animation: fadein 2s;
+}
+
+.arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    height: 50px;
+    width: 50px;
+    transition: all .25s;
+    transform-origin: 50% 50%;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table, td {
+    border: 3.5px solid rgba(1, 57, 109, 0.671);
+}
+
+td {
+    padding: 5px;
+    font-size: 25px;
+    color: rgba(1, 57, 109, 0.671);
+    text-align: center;
+}
+
+td.title {
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(1, 57, 109, 0.671);
+}
+
+td.album {
+    font-style: italic;
+}

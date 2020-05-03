@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>metacritic Scraper</title>
+</head>
+
+<body>
+    <div class="tile" id="header">
+        <% music.forEach(function(release) { %>
+        <% if (release.id === 0) { %>
+        <h1 id="releaseDate"><%= release.artistName %></h1>
+        <% } %>
+        <% }); %>
+        <p id="timer"></p>
+        <script type="text/javascript" src="timer.js"></script>
+        <object data="down.svg" type="image/svg+xml" class="arrow"></object>
+    </div>
+    <div class="tile" id="music">
+        <table>
+            <tr>
+                <td class="title">ARTIST</td>
+                <td class="title">ALBUM</td>
+            </tr>
+            <% music.forEach(function(release) { %>
+            <% if (release.id !== 0) { %>
+            <tr>
+                <td class="artist"><%= release.artistName %></td>
+                <td class="album"><%= release.albumName %></td>
+            </tr>
+            <% } %>
+            <% }); %>
+        </table>
+        <h3>Get the next upcoming releases straight from metacritic.com</h3>
+    </div>
+</body>
+
+</html>
